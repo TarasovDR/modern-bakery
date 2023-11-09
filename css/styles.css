@@ -1,4 +1,12 @@
-h1,h2,h3,h4,h5,h6 {
+body {
+  background-color: #FAF4EA;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* h1,h2,h3,h4,h5,h6 {
   word-wrap: break-word
 }
 
@@ -16,19 +24,53 @@ h2 {
 h3 {
   font-size: 40px;
   font-weight: 600;
-}
+} */
 
-/* h4 {
-  font-size: 24px;
+.site-nav__item {
+  font-size: 18px;
   font-weight: 400;
 }
 
-h5 {
-  font-size: 20px;
-  font-weight: 300;
+.site-nav__link {
+  color: #FAF4EA;
+  color: #000000;
 }
 
-h6 {
+.site-nav__link:hover {
+color: #819B57
+}
+
+.button {
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: 2px #819B57 solid; 
+
+  color: #FAF4EA;
+  background-color: #819B57;
   font-size: 18px;
-  font-weight: 300;
-} */
+font-weight: 600;
+}
+
+.button:hover{
+  color: #465929;
+  background-color: #fff;
+}
+
+.header__title {
+  color: #FAF4EA;
+  font-size: 128px;
+  font-weight: 900;
+}
+
+.header__title > span {
+  color: #819B57;
+  font-size: 128px;
+  font-weight: 900;
+}
+
+.header__advantages {
+  color: #FAF4EA;
+  color: #000000;
+font-size: 20px;
+font-weight: 300;
+}

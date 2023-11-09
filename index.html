@@ -6,27 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
   </head>
   <body>
-    <header>
-      <a href="/" class="logo">
-        <img src="./icons/logo.svg" alt="лого" />
-      </a>
-      <nav>
-        <ul>
-          <li><a href="traditions-section">Наші традиції</a></li>
-          <li><a href="chefs-section">Шеф-кухарі</a></li>
-          <li><a href="formats-section">Формати</a></li>
-          <li><a href="form-section">Контакти</a></li>
-        </ul>
-      </nav>
-      <button type="button">Замовити дзвінок</button>
-      <h1>Сучасна пекарня</h1>
-      <section class="hero">
-        <h3>Великий попит на ринку</h3>
-        <h3>Доступні за бюджетом формати</h3>
-        <h3>Досвідчена управлінська команда</h3>
-      </section>
+    <header class="header">
+      <div class="container">
+        <a href="/" class="logo">
+          <img src="./icons/logo.svg" alt="лого" />
+        </a>
+        <nav class="header__nav">
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="traditions-section" class="site-nav__link"
+                >Наші традиції</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="chefs-section" class="site-nav__link">Шеф-кухарі</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="formats-section" class="site-nav__link">Формати</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="form-section" class="site-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="button">Замовити дзвінок</button>
+        <section class="hero">
+          <h1 class="header__title"><span>Сучасна</span> пекарня</h1>
+          <h3 class="header__advantages">Великий попит на ринку</h3>
+          <h3 class="header__advantages">Доступні за бюджетом формати</h3>
+          <h3 class="header__advantages">Досвідчена управлінська команда</h3>
+        </section>
+      </div>
     </header>
     <main>
       <section id="traditions-section" class="traditions">
