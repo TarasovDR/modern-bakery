@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-display: swap;
   font-family: 'Poppins';
@@ -46,12 +50,22 @@ body {
   line-height: 1.5;
 }
 
-ul {
+/* h1,h2,h3,h4,h5,h6,p, ul {
   list-style-type: none;
-}
+  margin: 0;
+} */
 
 address {
   font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /*  HEADER  */
@@ -89,6 +103,18 @@ address {
   background-color: transparent;
 }
 
+/*  Sections  */
+
+.section {
+  padding: 48px 0;
+}
+
+/*  Hero  */
+
+.section-hero {
+  padding: 272px 0;
+}
+
 .hero__title {
   /* color: var(--color-primary-light); */
   font-size: 128px;
@@ -107,8 +133,6 @@ address {
   font-weight: 300;
 }
 
-/*  Sections  */
-
 .section-title {
   color: var(--color-primary-dark);
   font-size: 64px;
@@ -120,7 +144,23 @@ address {
   color: var(--color-brand-dark);
 }
 
+/*  Advantages  */
+
+.section-advantages {
+  padding-top: 0;
+}
+
+.advantages-item {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+
 /*  Traditions  */
+
+.traditions-title {
+  margin-bottom: 42px;
+}
 
 .traditions-text .brand {
   font-weight: 600;
@@ -131,15 +171,11 @@ address {
   text-transform: uppercase;
 }
 
-/*  Advantages  */
-
-.advantages-item {
-  font-size: 20px;
-  font-weight: 300;
-}
-
-
 /*  Chefs  */
+
+.chefs-title, .formats-title {
+  margin-bottom: 80px;
+}
 
 .chef-title {
   font-size: 40px;
@@ -149,6 +185,7 @@ address {
 /*  Formats  */
 
 footer {
+  padding-top: 48px;
   background-color: #000000;
 }
 
@@ -161,6 +198,12 @@ footer {
   color: var(--color-primary-light);
   font-size: 14px;
   font-weight: 300;
+}
+
+/*  Form  */
+
+.form-title {
+  margin-bottom: 16px;
 }
 
 /*  Footer  */
