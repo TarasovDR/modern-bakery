@@ -68,6 +68,20 @@ address {
 
 /*  HEADER  */
 
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
 .site-nav__item {
   font-size: 18px;
   font-weight: 400;
@@ -81,8 +95,7 @@ address {
 .site-nav__link:hover {
   color: var(--color-brand-light);
   text-decoration: underline;
-  font-weight: 600;
-  
+  /* font-weight: 600; */
 }
 
 .button {
@@ -124,13 +137,6 @@ address {
   color: var(--color-brand-light);
 }
 
-.advantages-list {
-  /* color: var(--color-primary-light); */
-  background-color: var(--color-brand-light);
-  font-size: 20px;
-  font-weight: 300;
-}
-
 .section-title {
   color: var(--color-primary-dark);
   font-size: 64px;
@@ -145,7 +151,21 @@ address {
 /*  Advantages  */
 
 .section-advantages {
-  padding-top: 0;
+  padding: 0;
+  background-color: var(--color-brand-light);
+}
+
+.advantages-list {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  color: var(--color-primary-light);
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .advantages-item {

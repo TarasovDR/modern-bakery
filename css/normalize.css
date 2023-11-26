@@ -35,6 +35,10 @@ hr {
   color: inherit;
 }
 
+li {  
+  list-style: none;
+}
+
 abbr[title] {
   text-decoration: underline dotted;
 }
