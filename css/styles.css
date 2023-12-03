@@ -95,7 +95,6 @@ address {
 .site-nav__link:hover {
   color: var(--color-brand-light);
   text-decoration: underline;
-  /* font-weight: 600; */
 }
 
 .button {
@@ -103,7 +102,7 @@ address {
   border-radius: 8px;
   border: 2px var(--color-brand-light) solid; 
 
-  /* color: var(--color-primary-light); */
+  color: var(--color-primary-light);
   background-color: var(--color-brand-light);
   font-size: 18px;
   font-weight: 600;
@@ -118,6 +117,17 @@ address {
 
 .section {
   padding: 48px 0;
+}
+
+.section-title {
+  color: var(--color-primary-dark);
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3125;
+}
+
+.section-title .accent {
+  color: var(--color-brand-dark);
 }
 
 /*  Hero  */
@@ -137,17 +147,6 @@ address {
   color: var(--color-brand-light);
 }
 
-.section-title {
-  color: var(--color-primary-dark);
-  font-size: 64px;
-  font-weight: 900;
-  line-height: 1.3125;
-}
-
-.section-title .accent {
-  color: var(--color-brand-dark);
-}
-
 /*  Advantages  */
 
 .section-advantages {
@@ -159,6 +158,7 @@ address {
   display: flex;
   justify-content:space-between;
   align-items: center;
+  gap: 40px;
 
   padding-top: 16px;
   padding-bottom: 16px;
@@ -173,10 +173,27 @@ address {
   font-weight: 300;
 }
 
-
 /*  Traditions  */
 
+.section-traditions {
+  padding-top: 96px;
+}
+
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
 .traditions-title {
+  margin-bottom: 42px;
+}
+
+.traditions-content{
+  max-width: 600px;
+}
+
+.traditions-text:not(:last-child) {
   margin-bottom: 42px;
 }
 
@@ -189,18 +206,69 @@ address {
   text-transform: uppercase;
 }
 
+.traditions-text.limited {
+  max-width: 340px;
+}
+
 /*  Chefs  */
+.chefs-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
 
 .chefs-title, .formats-title {
   margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 532px;
+  text-align: center;
 }
 
-.chef-title {
+.chef-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.chef-name {
+  margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
 }
 
+.chef-descr {
+  max-width: 334px;
+}
+
+.chef-descr p:not(:last-child) {
+  margin-bottom: 24px;
+}
+
 /*  Formats  */
+
+.formats-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.format-item {
+  max-width: 349px;
+  height: 444px;
+  border: 1px solid black;
+  border-radius: 16px;
+  padding-top: 248px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+.format-title {
+  margin-bottom: 16px;
+}
+
+/*  Footer  */
 
 footer {
   padding-top: 48px;
