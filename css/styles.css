@@ -254,7 +254,8 @@ address {
 }
 
 .format-item {
-  max-width: 349px;
+  flex-basis: calc((100% - 40px)/ 3);
+  flex-wrap: wrap;
   height: 444px;
   border: 1px solid black;
   border-radius: 16px;
@@ -265,6 +266,18 @@ address {
 }
 
 .format-title {
+  margin-bottom: 16px;
+}
+
+/*  Form  */
+
+.form-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.form-title {
   margin-bottom: 16px;
 }
 
@@ -285,14 +298,6 @@ footer {
   font-size: 14px;
   font-weight: 300;
 }
-
-/*  Form  */
-
-.form-title {
-  margin-bottom: 16px;
-}
-
-/*  Footer  */
 
 .address-link {
   color: var(--color-primary-light);
